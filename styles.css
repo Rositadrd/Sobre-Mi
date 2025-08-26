@@ -1,0 +1,40 @@
+
+body {
+    background: linear-gradient(to right, #bd4c42, #fa8072, #ffbba8);
+    text-align: center;
+    color: white;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+}
+
+
+h1, h2, h3 {
+    font-family: "Playwrite RO", cursive;
+}
+p {
+    font-family: "Old Standard TT", serif;
+}
+
+li, ul{
+    text-align: left;
+    list-style: square;
+}
+h2{
+    text-align: center;
+}
+
+
+
+
+
+.introduccion{
+    text-decoration: underline black;
+}
