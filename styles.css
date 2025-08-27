@@ -1,40 +1,162 @@
+:root {
+    --playwrite: "Playwrite RO", cursive;
+    --oldstandard: "Old Standard TT", serif;
+    --color-texto: #ffffff;
+    --color-secundario: #000000;
+    --color-fondo: #fa8072;
+    --color-acento: #bd4c42;
+    --color-acento2: #ffbba8;
+    --color-detalles: #f7c6b7;
+    --máximo-ancho: 1200px;
+    --margin: 10px 10px 10px 10px;
+    --padding: 20px;
+}
 
+/*css de las partes generales (head, header, main, etc.)*/
 body {
-    background: linear-gradient(to right, #bd4c42, #fa8072, #ffbba8);
+    background: linear-gradient(to right, var(--color-acento), var(--color-fondo), var(--color-acento2));
     text-align: center;
-    color: white;
+    color: var(--color-texto);
 }
 
-header{
-    background-color: black;
-    text-align: center;
-}
-
-footer{
-    background-color: black;
+header {
+    background-color: var(--color-secundario);
     text-align: center;
 }
 
+footer {
+    background-color: var(--color-secundario);
+    text-align: center;
+}
 
 h1, h2, h3 {
-    font-family: "Playwrite RO", cursive;
+    font-family: var(--playwrite);
 }
-p {
-    font-family: "Old Standard TT", serif;
+p, h4, h5, h6 {
+    font-family: var(--oldstandard);
 }
 
-li, ul{
+li, ul {
     text-align: left;
     list-style: square;
 }
-h2{
+
+section {
+    max-width: var(--máximo-ancho);
+    margin: auto;
+    padding: var(--padding);
+    text-align: center;
+    border: 2px solid var(--color-detalles);
+    border-radius: 10px;
+    background-color: var(--color-acento2);
+    box-shadow: 5px 5px 15px var(--color-secundario);
+    margin: 30px 200px 0px 200px !important;
+}
+
+section:hover {
+    box-shadow: 10px 10px 20px var(--color-secundario);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*css de contenido del header*/
+
+.introduccion {
+    font-size: 18px;
+    margin: 0 10px 10px 10px;
+    padding: 10px;
     text-align: center;
 }
 
+/*css de contenido del main*/
 
-
-
-
-.introduccion{
-    text-decoration: underline black;
+.quién-soy {
+    font-size: 18px;
+    margin: var(--margin);
+    padding: var(--padding);
+    text-align: center;
 }
+
+.quién-soy p {
+    background-color: var(--color-acento);
+    margin: var(--margin);
+    padding: var(--padding);
+    border-radius: 1rem;
+}
+
+.pasatiempos {
+    font-size: 18px;
+    margin: var(--margin);
+    padding: var(--padding);
+    text-align: center;
+}
+
+.pasatiempos ul{
+    background-color: var(--color-acento);
+    margin: var(--margin);
+    padding: var(--padding);
+    border-radius: 1rem;
+}
+
+.Algunas-cosas-sobre-mí {
+    font-size: 18px;
+    margin: var(--margin);
+    padding: var(--padding);
+    text-align: center;
+}
+
+.Algunas-cosas-sobre-mí ul, .Algunas-cosas-sobre-mí p{
+    background-color: var(--color-acento);
+    margin: var(--margin);
+    padding: var(--padding);
+    border-radius: 1rem;
+}
+
+.f1 {
+    font-size: 18px;
+    margin: var(--margin);
+    padding: var(--padding);
+    text-align: center;
+}
+
+.f1 p {
+    background-color: var(--color-acento);
+    margin: var(--margin);
+    padding: var(--padding);
+    border-radius: 1rem;
+}
+
+.música {
+    font-size: 18px;
+    margin: var(--margin);
+    padding: var(--padding);
+    text-align: center;
+}
+
+.música p, .música ul {
+    background-color: var(--color-acento);
+    margin: var(--margin);
+    padding: var(--padding);
+    border-radius: 1rem;
+}
+
+.música ul li{
+    list-style: disc;
+}
+
+.música ul li a {
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
